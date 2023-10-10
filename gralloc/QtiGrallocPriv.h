@@ -217,9 +217,9 @@ struct private_handle_t : public native_handle_t {
         reserved_size(0),
 #endif
         linear_size(0),
-        ubwcp_format(format),
+        ubwcp_format(format)
 #ifdef GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE
-        custom_content_md_reserved_size(0)
+        ,custom_content_md_reserved_size(0)
 #endif
   {
     version = static_cast<int>(sizeof(native_handle));
